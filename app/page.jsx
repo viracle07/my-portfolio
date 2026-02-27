@@ -1,4 +1,6 @@
 "use client"
+import Powerpoint from '@/components/Powerpoint';
+import Videoediting from '@/components/Videoediting';
 import Webdev from '@/components/Webdev';
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
@@ -7,10 +9,10 @@ import { MdArrowOutward } from "react-icons/md";
 const page = () => {
 
   const subhead = [
-    { title: "Web Development" },
-    { title: "Presentation Design" },
-    { title: "Video Editing" },
-    { title: "Forex Market Analysis" },
+    { title: "Web Development", sectionId: "web" },
+    { title: "Presentation Design", sectionId: "design" },
+    { title: "Video Editing", sectionId: "video" },
+    { title: "Forex Market Analysis", sectionId: "forex" },
   ]
 
   return (
@@ -25,27 +27,30 @@ const page = () => {
 
         <div className='absolute top-0 left-0 w-full h-full bg-black/85'></div>
 
-        <div className='relative flex items-center justify-center flex-col lg:top-50 md:top-100 top-50 text-[#cc00ff] px-15 space-y-3'>
-          <h1 className='md:text-9xl text-5xl font-bold'>Veeracle</h1>
+        <div className='relative flex items-center justify-center flex-col md:top-50 top-50 text-[#cc00ff] px-15 space-y-3'>
+          <h1 className='lg:text-9xl md:text-7xl text-5xl font-bold'>Veeracle</h1>
           <h1 className='md:text-4xl text-lg font-bold text-white animate-bounce '>Engineering Digital Excellence...</h1>
         </div>
 
-        <div className=' relative text-center max-sm:space-y-7 max-lg:space-y-10 lg:flex text-white px-10 lg:top-55 top-65 justify-center md:top-150'>
+        <div className=' relative text-center max-sm:space-y-7 md:flex text-white px-10 md:top-55 top-65 justify-center'>
           {subhead.map((sub, index) => (
             <div key={index} className='border py-1  px-2 border-[#cc00ff] transition-all duration-600 hover:translate-y-4 hover:bg-purple-800/70 hover:cursor-pointer'>
-              <p>{sub.title} </p>
+              <button className='hover:cursor-pointer
+              '
+                onClick={() => {
+                  document.getElementById(sub.sectionId)?.scrollIntoView({
+                    behavior: "smooth"
+                  })
+                }}
+              >{sub.title} </button>
             </div>
           ))}
 
         </div>
 
-        <div className='relative flex items-center px-10 lg:justify-end justify-center text-black lg:top-70 top-85 md:top-250'>
-          <div className='bg-white w-fit md:w-full lg:w-fit  p-4 rounded-lg shadow-purple-700/50 shadow-lg flex gap-1 items-center md:justify-center font-bold hover:scale-110 hover:cursor-pointer hover:bg-purple-800/50 hover:text-white transition-all duration-400 hover:shadow-none'>
-            <button onClick={() => {
-              document.getElementById("projects")?.scrollIntoView({
-                behavior: "smooth"
-              })
-            }}>Start Your Project</button>
+        <div className='relative flex items-center px-10 md:justify-end justify-center text-black md:top-70 top-85'>
+          <div className='bg-white w-fit  p-4 rounded-lg shadow-purple-700/50 shadow-lg flex gap-1 items-center md:justify-center font-bold hover:scale-110 hover:cursor-pointer hover:bg-purple-800/50 hover:text-white transition-all duration-400 hover:shadow-none'>
+            <button>Start Your Project</button>
             <MdArrowOutward className='font-bold text-lg' />
           </div>
         </div>
@@ -101,8 +106,16 @@ const page = () => {
 
       </section>
 
-      <section id='projects' className='min-h-dvh'>
+      <section id='web' className='min-h-dvh'>
         <Webdev />
+      </section>
+
+      <section id='design' className='min-h-dvh'>
+        <Powerpoint />
+      </section>
+
+      <section className='min-h-dvh'>
+        <Videoediting />
       </section>
     </main>
   )

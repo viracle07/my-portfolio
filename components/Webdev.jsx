@@ -23,8 +23,8 @@ const Webdev = () => {
 
                 <div className='absolute top-0 left-0 w-full h-full bg-black/80'></div>
 
-                <div className='relative text-white top-50 flex flex-col items-center justify-center px-10 space-y-5 '>
-                    <h1 className='text-6xl font-bold'>Web Development</h1>
+                <div className='relative text-white md:top-50 top-70 flex flex-col items-center justify-center md:px-10 px-4 lg:space-y-5 space-y-15 '>
+                    <h1 className='md:text-6xl text-4xl font-bold'>Web Development</h1>
 
                     <div className='text-center'>
                         <p>We build fast, SEO-optimized websites powered by React and Next.js — engineered to attract visitors, convert leads, and scale businesses. With integrated AI automation, your website doesn’t just exist — it follows up, nurtures prospects, and turns traffic into revenue.</p>
@@ -33,11 +33,22 @@ const Webdev = () => {
                 </div>
             </section>
 
-            <section className='bg-black min-h-dvh py-20 px-10 space-y-20'>
+            <section className='bg-black min-h-dvh lg:py-20 py-10 lg:px-10 px-4 lg:space-y-20 space-y-10'>
                 <div>
-                    <div className='text-white flex items-center justify-center gap-20 '>
-                        <img src="webdevpic1.jpg" alt="image" className='h-60 w-100 rounded-md' />
-                        <span className='w-150 border-l-2 pl-15 space-y-3 text-lg border-purple-700'>
+                    <div className='text-white lg:flex  items-center justify-center lg:gap-20  '>
+                        <span className='lg:hidden lg:w-150 lg:border-l-2 lg:pl-15 space-y-3 text-lg border-purple-700 '>
+                            <p>
+                                Modern businesses don’t just need websites — they need intelligent digital systems. At Veeracle, we develop high-performance platforms designed for speed, search visibility, and seamless user experience.
+                            </p>
+
+                            <p>
+                                Modern businesses don’t just need websites — they need intelligent digital systems. At Veeracle, we develop high-performance platforms designed for speed, search visibility, and seamless user experience.
+                            </p>
+                        </span>
+
+                        <img src="webdevpic1.jpg" alt="image" className='h-60 w-100 rounded-md max-lg:mt-10' />
+
+                        <span className='max-lg:hidden w-150 border-l-2 pl-15 space-y-3 text-lg border-purple-700'>
                             <p>
                                 Modern businesses don’t just need websites — they need intelligent digital systems. At Veeracle, we develop high-performance platforms designed for speed, search visibility, and seamless user experience.
                             </p>
@@ -53,9 +64,9 @@ const Webdev = () => {
 
 
                 <div className='space-y-10 text-white'>
-                    <h1 className='text-center  text-6xl text-purple-700 font-bold'>What We Deliver</h1>
+                    <h1 className='lg:text-center  lg:text-6xl text-2xl text-purple-700 font-bold'>What We Deliver</h1>
 
-                    <div className='grid grid-cols-3 gap-5'>
+                    <div className='grid lg:grid-cols-3 gap-5'>
                         <div className='flex items-center gap-4 '>
                             <TiBusinessCard className='text-purple-700 text-2xl' />
                             <p>Custom Business Platforms</p>
@@ -107,9 +118,9 @@ const Webdev = () => {
                 <div className='border-b h-2 border-gray-300/18 shadow-md'></div>
 
                 <div className='text-white space-y-20'>
-                    <div className='space-y-4'>
-                        <h1 className='font-bold text-2xl text-center'>Technologies Used</h1>
-                        <ul className='flex items-center gap-5 justify-center'>
+                    <div className='space-y-4 '>
+                        <h1 className='font-bold text-2xl lg:text-center'>Technologies Used</h1>
+                        <ul className='flex max-lg:grid lg:items-center gap-5 lg:justify-center'>
                             <li>React</li>
                             <li>NextJS</li>
                             <li>Tailwind CSS</li>
@@ -120,10 +131,10 @@ const Webdev = () => {
                     </div>
 
                     <div className='space-y-2'>
-                        <h1 className='text-center text-2xl font-bold'>Outcome / Results</h1>
-                        <div className='flex items-center justify-center gap-40'>
+                        <h1 className='lg:text-center text-2xl font-bold'>Outcome / Results</h1>
+                        <div className='flex max-md:grid items-center lg:justify-center lg:gap-40'>
                             <div>
-                                <ul className='space-y-4'>
+                                <ul className=' space-y-4'>
                                     <li>✔ Faster loading speed
                                     </li>
                                     <li>✔ Higher conversion rates
@@ -135,15 +146,18 @@ const Webdev = () => {
                                     <li>✔ Scalable digital infrastructure</li>
                                 </ul>
                             </div>
-
-                            <img src="/webdev3.jpg" alt="image" className='h-60 w-80 rounded-md' />
-                        </div>
+                            <video src="/webdev1.mp4"
+                                muted
+                                loop
+                                autoPlay
+                                className='h-60 w-80 ' />
                     </div>
-
                 </div>
 
-            </section>
-        </main>
+            </div>
+
+        </section>
+        </main >
     )
 }
 
