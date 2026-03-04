@@ -1,4 +1,5 @@
 "use client"
+import Forex from '@/components/Forex';
 import Powerpoint from '@/components/Powerpoint';
 import Videoediting from '@/components/Videoediting';
 import Webdev from '@/components/Webdev';
@@ -114,8 +115,12 @@ const page = () => {
         <Powerpoint />
       </section>
 
-      <section className='min-h-dvh'>
+      <section id='video' className='min-h-dvh'>
         <Videoediting />
+      </section>
+
+      <section id='forex' className=' min-h-dvh'>
+        <Forex />
       </section>
     </main>
   )
