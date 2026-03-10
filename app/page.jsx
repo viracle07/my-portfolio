@@ -3,6 +3,7 @@ import Forex from '@/components/Forex';
 import Powerpoint from '@/components/Powerpoint';
 import Videoediting from '@/components/Videoediting';
 import Webdev from '@/components/Webdev';
+import Link from 'next/link';
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
 
@@ -121,6 +122,107 @@ const page = () => {
 
       <section id='forex' className=' min-h-dvh'>
         <Forex />
+      </section>
+
+      <section className='px-10 py-10 space-y-15'>
+        <div className='flex items-center justify-center flex-col space-y-3'>
+          <h1 className='font-bold text-2xl'>View Our Recent Works</h1>
+
+          <span className='flex items-center text-lg gap-2 '>
+            <p>Here are few past web development projects we've worked on. Want to see more? 
+            </p>
+            <a 
+            href='mailto:veeracle7@gmail.com/'
+            className='text-purple-600 underline cursor-pointer  font-bold'>Email us</a>
+          </span>
+        </div>
+
+        <div className='flex items-center justify-center'>
+
+          <div className='grid grid-cols-3 gap-5 space-y-2'>
+
+            <div className="group h-60 w-90 relative rounded-xl bg-[url('/reu13.jpeg')] bg-center bg-cover bg-no-repeat shadow-sm cursor-pointer transitiona-all duration-1000 ease-out transition-all duration-500 ease-in-out  ">
+              <div className='absolute top-0 left-0 bg-[#0B0B45]/80   h-60 w-90 rounded-xl'></div>
+              <div className='absolute flex items-center justify-center flex-col w-90 h-60 top-0 text-white text-2xl font-bold'>
+                <p>
+                  Pastor Reuben
+                </p>
+                <p>
+                  Official Website
+                </p>
+                <div className='border border-yellow-500 w-45 mt-2'></div>
+
+              </div>
+
+              <div className='absolute inset-0 group-hover:opacity-100 opacity-0 bg-[#0c0e31] p-4 group-hover:
+        transition-all duration-500 ease-out rounded-lg flex flex-col items-center justify-center space-y-5'>
+                <p className='text-white font-semibold text-lg text-center group-hover:animate-[slideIn_.5s_ease-out]'>Official platform of Pastor Reuben Wilson showcasing leadership, education, humanitarian outreach, scholarships, and national development.</p>
+
+                <a href={"https://www.pastorreubenwilson.com/"}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='border-2 text-white border-purple-700 hover:bg-purple-700 group-hover:animate-[slideIn_.5s_ease-out] font-semibold transition-all duration-600 rounded-full py-2 px-5'>Visit website</a>
+              </div>
+
+            </div>
+
+            <div className="group h-60 w-90 relative rounded-xl bg-[url('/tradertalks1.jpeg')] bg-center bg-cover bg-no-repeat shadow-sm cursor-pointer transitiona-all duration-1000 ease-out transition-all duration-500 ease-in-out  ">
+              <div className='absolute top-0 left-0 bg-green-300/80   h-60 w-90 rounded-xl'></div>
+              <div className='absolute flex items-center justify-center flex-col w-90 h-60 top-0 text-white text-2xl font-bold'>
+
+                <img src="/tradertalks.png" alt="images" className='h-20 w-20' />
+                <span className='flex items-center text-4xl '>
+                  <p className='text-green-800  '>Trader</p>
+                  <p className='text-red-600'>Talks</p>
+
+                </span>
+
+
+              </div>
+
+              <div className='absolute inset-0 group-hover:opacity-100 opacity-0 bg-[#0c0e31] p-4 group-hover:
+        transition-all duration-500 ease-out rounded-lg flex flex-col items-center justify-center space-y-5'>
+                <p className='text-white font-semibold text-lg text-center group-hover:animate-[slideIn_.5s_ease-out]'>A collaborative trading community for sharing Forex ideas, market insights, and learning together.</p>
+
+                <a href={"https://trader-talks.vercel.app/"}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='border-2 text-white border-purple-700 hover:bg-purple-700 group-hover:animate-[slideIn_.5s_ease-out] font-semibold transition-all duration-600 rounded-full py-2 px-5'>Visit website</a>
+              </div>
+
+            </div>
+
+            <div className="group h-60 w-90 relative rounded-xl bg-[url('/ldc.jpg')] bg-center bg-cover bg-no-repeat shadow-sm cursor-pointer transitiona-all duration-1000 ease-out transition-all duration-500 ease-in-out  ">
+              <div className='absolute top-0 left-0 bg-yellow-900/80   h-60 w-90 rounded-xl'></div>
+              <div className='absolute flex items-center justify-center flex-col w-90 h-60 top-0 text-white text-2xl font-bold'>
+
+                <span className=''>
+
+                  <p className='text-7xl'>
+                    LDC
+                  </p>
+                  <p className='text-xs text-yellow-300'>
+                    Loan Deduction Calculator
+                  </p>
+                </span>
+
+
+              </div>
+
+              <div className='absolute inset-0 group-hover:opacity-100 opacity-0 bg-[#0c0e31] p-4 group-hover:
+        transition-all duration-500 ease-out rounded-lg flex flex-col items-center justify-center space-y-5'>
+                <p className='text-white font-semibold text-lg text-center group-hover:animate-[slideIn_.5s_ease-out]'>A digital tool that calculates estimated loan deductions from salary using loan amount, salary, and repayment duration.</p>
+
+                <a href={"https://loan-deduction-calculator-qa2c.vercel.app/"}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='border-2 text-white border-purple-700 hover:bg-purple-700 group-hover:animate-[slideIn_.5s_ease-out] font-semibold transition-all duration-600 rounded-full py-2 px-5'>Visit website</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
       </section>
     </main>
   )
