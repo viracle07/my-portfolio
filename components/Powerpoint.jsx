@@ -4,7 +4,7 @@ const Powerpoint = () => {
     return (
         <main className='min-h-dvh'>
 
-            <section className='h-screen md:px-10 px-4 flex md:justify-center  lg:justify-between max-lg:flex-col'>
+            <section className='h-screen md:px-10 px-5 flex md:justify-center  lg:justify-between max-lg:flex-col'>
 
                 <div className='lg:w-100 relative'>
                     <div className='absolute lg:top-40 top-40 left-0 space-y-8'>
@@ -31,11 +31,11 @@ const Powerpoint = () => {
 
             </section>
 
-            <section className='min-h-dvh px-10 py-15'>
+            <section className='min-h-dvh lg:px-10 px-4 lg:py-15'>
                 <div>
                     <div className='border border-purple-200/95'></div>
-                    <div className='grid grid-cols-3'>
-                        <div className='space-y-4 py-10 border-r border-purple-200/95'>
+                    <div className='lg:grid grid-cols-3'>
+                        <div className='space-y-4 py-10 lg:border-r border-purple-200/95'>
                             <h1 className='text-center font-bold text-2xl text-purple-700'>What We Deliver</h1>
                             <ul className='flex items-center justify-center flex-col space-y-3'>
                                 <li>Investor Pitch Decks</li>
@@ -47,7 +47,7 @@ const Powerpoint = () => {
                             </ul>
                         </div>
 
-                        <div className='space-y-4 py-10 border-r border-purple-200/95 shadow-lg'>
+                        <div className='space-y-4 py-10 lg:border-r border-purple-200/95 lg:shadow-lg'>
                             <h1 className='text-center font-bold text-2xl text-purple-700'>Design Focus</h1>
                             <ul className='flex items-center justify-center flex-col space-y-3'>
                                 <li>Clean, modern layout</li>
@@ -75,9 +75,9 @@ const Powerpoint = () => {
 
                 </div>
 
-                <div className='py-15 flex items-center justify-center gap-5 px-10 '>
-                    <img src="/powerpoint2.jpeg " alt="image" className='h-80 w-140 rounded-lg' />
-                    <img src="/powerpoint1.jpeg" alt="image" className='h-80 w-140 rounded-lg' />
+                <div className='py-15 lg:flex items-center justify-center gap-5 lg:px-10 max-md:space-y-7 '>
+                    <img src="/powerpoint2.jpeg " alt="image" className='h-80 lg:w-140 rounded-lg' />
+                    <img src="/powerpoint1.jpeg" alt="image" className='h-80 lg:w-140 rounded-lg' />
                 </div>
 
             </section>

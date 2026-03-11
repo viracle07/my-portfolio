@@ -9,22 +9,22 @@ const Videoediting = () => {
           muted
           loop
           autoPlay
-          className='absolute top-53 left-0 object-cover h-90 w-full' />
+          className='absolute lg:top-53 left-0 top-70 lg:object-cover h-90 w-full' />
 
-        <div className='absolute top-20 text-white flex items-center justify-center flex-col w-full space-y-4 text-center'>
-          <h1 className='text-purple-700 text-4xl font-bold'>Video Editing & Motion Design</h1>
+        <div className='absolute lg:top-20 top-30 text-white flex items-center px-4 justify-center flex-col w-full space-y-4 text-center'>
+          <h1 className='text-purple-700 lg:text-4xl text-2xl font-bold'>Video Editing & Motion Design</h1>
           <p className=''>In today’s digital world, attention is currency. We create visually compelling video content designed to capture, retain, and convert audiences across platforms.</p>
         </div>
 
       </section>
 
-      <section className=' bg-black px-10 py-20'>
+      <section className=' bg-black lg:px-10 px-5 lg:py-20 max-md:pb-20 '>
 
-        <div className='text-white flex items-center justify-between'>
-          <div className='w-150 space-y-12'>
+        <div className='text-white lg:flex items-center justify-between max-md:space-y-10'>
+          <div className='lg:w-150 space-y-12'>
             <p className='text-xl font-bold text-purple-700 text-center'>From promotional reels to educational content and branded storytelling, we transform raw footage into engaging cinematic experiences.</p>
 
-            <div className='grid grid-cols-2 gap-3'>
+            <div className='lg:grid grid-cols-2 gap-3 max-md:space-y-10'>
               <div className='space-y-3 '>
                 <h1 className='text-lg font-bold'>What We Deliver</h1>
                 <ul>

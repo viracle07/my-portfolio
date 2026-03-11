@@ -13,15 +13,15 @@ const Forex = () => {
 
                 <div className='absolute top-0 left-0 w-full h-full bg-black/65'></div>
 
-                <div className='absolute top-50 w-full text-center bg-black/30 p-10 text-center text-white backdrop-blur-md space-y-5'>
-                    <h1 className='text-5xl text-[#cc00ff] font-bold'>Forex Market Analysis & Trading Education</h1>
+                <div className='absolute top-50 w-full text-center bg-black/30 lg:p-10 p-5 text-center text-white backdrop-blur-md space-y-5'>
+                    <h1 className='lg:text-5xl text-3xl text-[#cc00ff] font-bold'>Forex Market Analysis & Trading Education</h1>
                     <p className='text-lg'>Trading is not gambling. It is strategy, structure, and disciplined execution. We provide structured market analysis and educational insights designed to help traders understand price action, risk management, and market behavior.</p>
                 </div>
             </section>
 
-            <section className='min-h-dvh px-10 py-15'>
-                <div className='grid grid-cols-3 gap-10'>
-                    <div className='space-y-6'>
+            <section className='min-h-dvh lg:px-10 px-5 py-15'>
+                <div className='lg:grid grid-cols-3 gap-10 max-md:space-y-10'>
+                    <div className='lg:space-y-6 space-y-3'>
                         <h1 className='text-xl font-bold'>Our approach focuses on:</h1>
                         <ul>
                             <li>Market structure analysis</li>
@@ -29,11 +29,9 @@ const Forex = () => {
                             <li>Technical breakdowns</li>
                             <li>Structured trading psychology</li>
                         </ul>
-
-                        <p className='font-bold'>We emphasize discipline, probability, and long-term sustainability.</p>
                     </div>
 
-                    <div className='space-y-6'>
+                    <div className='space-y-3 lg:space-y-6'>
                         <h1 className='text-xl font-bold'>What We Deliver</h1>
                         <ul>
                             <li>Technical Chart Analysis</li>
@@ -45,7 +43,7 @@ const Forex = () => {
                         </ul>
                     </div>
 
-                    <div className='space-y-6'>
+                    <div className='space-y-3 lg:space-y-6'>
                         <h1 className='text-xl font-bold'>Outcome / Results</h1>
                         <ul>
                             <li>✔ Improved trading discipline
@@ -63,7 +61,7 @@ const Forex = () => {
                 </div>
 
                 <div className='py-15 flex items-center justify-center'>
-                    <img src="/forex2.jpg" alt="image" className='h-100 ' />
+                    <img src="/forex2.jpg" alt="image" className='lg:h-100 ' />
                 </div>
 
                 <div className='border-b h-2 border-gray-300/50'></div>

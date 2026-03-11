@@ -124,11 +124,11 @@ const page = () => {
         <Forex />
       </section>
 
-      <section className='px-10 py-10 space-y-15'>
+      <section className='lg:px-10 px-5 lg:py-10 space-y-15'>
         <div className='flex items-center justify-center flex-col space-y-3'>
           <h1 className='font-bold text-2xl'>View Our Recent Works</h1>
 
-          <span className='flex items-center text-lg gap-2 '>
+          <span className='lg:flex items-center text-lg gap-2 text-center '>
             <p>Here are few past web development projects we've worked on. Want to see more? 
             </p>
             <a 
@@ -139,7 +139,7 @@ const page = () => {
 
         <div className='flex items-center justify-center'>
 
-          <div className='grid grid-cols-3 gap-5 space-y-2'>
+          <div className='lg:grid grid-cols-3 gap-5 max-md:space-y-5'>
 
             <div className="group h-60 w-90 relative rounded-xl bg-[url('/reu13.jpeg')] bg-center bg-cover bg-no-repeat shadow-sm cursor-pointer transitiona-all duration-1000 ease-out transition-all duration-500 ease-in-out  ">
               <div className='absolute top-0 left-0 bg-[#0B0B45]/80   h-60 w-90 rounded-xl'></div>

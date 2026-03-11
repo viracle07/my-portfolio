@@ -47,13 +47,13 @@ const Navbar = () => {
 
             {/* Desktop Nav */}
             <div className='flex items-center gap-10 bg-white rounded-md px-5 py-2 text-black font-bold max-md:hidden'>
-                <ul className='flex items-center gap-7'>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                </ul>
+                <div className='flex items-center gap-7'>
+                    <Link href={"/"}>Home</Link>
+                    <Link href={"/about"}>About Us</Link>
+                    <Link href={"/contact"}>Contact Us</Link>
+                </div>
                 <div className='bg-black rounded-md text-white px-3 py-2'>
-                    <p>FAQS</p>
+                    <Link href={"/faqs"}>FAQS</Link>
                 </div>
             </div>
 

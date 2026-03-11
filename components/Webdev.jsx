@@ -23,7 +23,7 @@ const Webdev = () => {
 
                 <div className='absolute top-0 left-0 w-full h-full bg-black/80'></div>
 
-                <div className='relative text-white md:top-50 top-70 flex flex-col items-center justify-center md:px-10 px-4 lg:space-y-5 space-y-15 '>
+                <div className='relative text-white md:top-50 top-70 flex flex-col items-center justify-center md:px-10 px-5 lg:space-y-5 space-y-15 '>
                     <h1 className='md:text-6xl text-4xl font-bold'>Web Development</h1>
 
                     <div className='text-center'>
@@ -33,7 +33,7 @@ const Webdev = () => {
                 </div>
             </section>
 
-            <section className='bg-black min-h-dvh lg:py-20 py-10 lg:px-10 px-4 lg:space-y-20 space-y-10'>
+            <section className='bg-black min-h-dvh lg:py-20 py-10 lg:px-10 px-5 lg:space-y-20 space-y-10'>
                 <div>
                     <div className='text-white lg:flex  items-center justify-center lg:gap-20  '>
                         <span className='lg:hidden lg:w-150 lg:border-l-2 lg:pl-15 space-y-3 text-lg border-purple-700 '>
