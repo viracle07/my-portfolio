@@ -1,11 +1,16 @@
 "use client"
 import Forex from '@/components/Forex';
 import Powerpoint from '@/components/Powerpoint';
+import StatsBoard from '@/components/StatsBoard';
 import Videoediting from '@/components/Videoediting';
 import Webdev from '@/components/Webdev';
 import Link from 'next/link';
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
+import { BiMessageDetail } from "react-icons/bi";
+import { PiHandPeaceThin } from "react-icons/pi";
+
+
 
 
 const page = () => {
@@ -52,7 +57,7 @@ const page = () => {
 
         <div className='relative flex items-center px-10 md:justify-end justify-center text-black md:top-70 top-85'>
           <div className='bg-white w-fit  p-4 rounded-lg shadow-purple-700/50 shadow-lg flex gap-1 items-center md:justify-center font-bold hover:scale-110 hover:cursor-pointer hover:bg-purple-800/50 hover:text-white transition-all duration-400 hover:shadow-none'>
-            <button>Start Your Project</button>
+            <Link href={"/startup"}>Start Your Project</Link>
             <MdArrowOutward className='font-bold text-lg' />
           </div>
         </div>
@@ -129,11 +134,11 @@ const page = () => {
           <h1 className='font-bold text-2xl'>View Our Recent Works</h1>
 
           <span className='lg:flex items-center text-lg gap-2 text-center '>
-            <p>Here are few past web development projects we've worked on. Want to see more? 
+            <p>Here are few past web development projects we've worked on. Want to see more?
             </p>
-            <a 
-            href='mailto:veeracle7@gmail.com/'
-            className='text-purple-600 underline cursor-pointer  font-bold'>Email us</a>
+            <a
+              href='mailto:veeracle7@gmail.com/'
+              className='text-purple-600 underline cursor-pointer  font-bold'>Email us</a>
           </span>
         </div>
 
@@ -224,6 +229,44 @@ const page = () => {
 
         </div>
       </section>
+
+      <section>
+        <StatsBoard />
+      </section>
+
+      <div className='flex items-center justify-center relative text-center py-15'>
+        <div className='flex flex-col items-center justify-center space-y-6 pb-25'>
+          <h1 className='font-bold text-3xl'>Interested in collaborating with us?
+          </h1>
+          <p className='text-lg'>We're always open to discussing product design work or partnership opportunities.
+          </p>
+          <Link href={"/colaboration"} className='border-2 border-purple-700 flex items-center justify-center gap-2 w-fit rounded-full px-7 py-3 text-purple-700 text-lg mt-5 hover:bg-purple-700 hover:text-white transition-all duration-300 '>
+            <BiMessageDetail className='text-2xl' />
+            <p>Start a Conversation</p></Link>
+        </div>
+
+        <div className='absolute top-80 bg-purple-800 h-45 w-[75rem] rounded-2xl flex items-center justify-center px-30'>
+          <div className='flex items-center justify-between text-white w-full'>
+            <h1 className='font-bold text-4xl'>Start a project
+            </h1>
+
+            <span className='text-lg'>
+              <p>Interested in working together? We should
+              </p>
+              <p> queue up a time to chat. we'll buy the coffee.
+              </p>
+
+            </span>
+
+
+            <Link href={"/startup"} className='border-2 border-white rounded-full py-3 px-10 text-xl flex items-center gap-3 hover:bg-black hover:text-purple-500 hover:border-black hover:scale-110 transition-all duration-500'>
+              <PiHandPeaceThin className='text-2xl font-bold' />
+
+              <p>Let's do this</p></Link>
+          </div>
+
+        </div>
+      </div>
     </main>
   )
 }
